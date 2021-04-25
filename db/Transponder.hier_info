@@ -1,0 +1,15 @@
+|Tr
+reset => chose[0]~reg0.ACLR
+reset => chose[1]~reg0.ACLR
+reset => chose[2]~reg0.ACLR
+clock => chose[0]~reg0.CLK
+clock => chose[1]~reg0.CLK
+clock => chose[2]~reg0.CLK
+con0 => always0.IN1
+con1 => always0.IN1
+con2 => always0.IN1
+chose[0] <= chose[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+chose[1] <= chose[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+chose[2] <= chose[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

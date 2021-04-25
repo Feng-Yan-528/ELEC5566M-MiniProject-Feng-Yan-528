@@ -15,6 +15,7 @@ module State_machine (
     input reset,
     input w,
 	 input n,
+	 input r,
     output reg cut,
 	 output reg rush,
 	 output reg result
@@ -57,9 +58,9 @@ always @(posedge clock or posedge reset) begin
                 if (w) begin 
                     state <= B_STATE;
                 end 
-                //if (!w) begin
-                    //state <= A_STATE;
-                //end
+                if (!w) begin
+                    state <= A_STATE;
+                end
             end
             B_STATE: begin // Define state B behaviour
                 if (n) begin
@@ -70,10 +71,10 @@ always @(posedge clock or posedge reset) begin
                 end
             end
             C_STATE: begin // Define state C behaviour
-                //if (w) begin
-                   // state <= C_STATE;
-               // end 
-                if (!w) begin
+                if (!r) begin
+                    state <= C_STATE;
+                end 
+                if (r) begin
                     state <= A_STATE;
                 end
             end
