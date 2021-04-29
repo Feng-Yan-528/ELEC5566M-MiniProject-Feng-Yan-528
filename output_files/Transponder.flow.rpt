@@ -1,5 +1,5 @@
 Flow report for Transponder
-Sun Apr 25 21:27:17 2021
+Wed Apr 28 07:50:02 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Apr 25 21:27:17 2021       ;
+; Flow Status                 ; Successful - Wed Apr 28 07:50:02 2021       ;
 ; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name               ; Transponder                                 ;
-; Top-level Entity Name       ; Tr                                          ;
+; Top-level Entity Name       ; Dy_scan                                     ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CGXFC7C7F23C8                              ;
 ; Timing Models               ; Final                                       ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/25/2021 21:27:02 ;
+; Start date & time ; 04/28/2021 07:49:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Transponder         ;
 +-------------------+---------------------+
@@ -73,19 +73,19 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 18121611664596.161938242114192         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 18121611664596.161959258623604         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Tr          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Tr          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Tr          ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Dy_scan     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Dy_scan     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Dy_scan     ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Tr                                     ; Transponder   ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Dy_scan                                ; Transponder   ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -94,8 +94,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:17     ; 1.0                     ; 4762 MB             ; 00:00:36                           ;
-; Total                  ; 00:00:17     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Elaboration ; 00:00:17     ; 1.0                     ; 4766 MB             ; 00:00:35                           ;
+; Total                  ; 00:00:17     ; --                      ; --                  ; 00:00:35                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Apr 25 21:27:17 2021
+Analysis & Elaboration Status : Successful - Wed Apr 28 07:50:02 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Transponder
-Top-level Entity Name : Tr
+Top-level Entity Name : Dy_scan
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
