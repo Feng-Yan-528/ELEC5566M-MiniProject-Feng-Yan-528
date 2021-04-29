@@ -1,0 +1,24 @@
+/*
+ * Dy_scan
+ * ---------------------
+ * For: University of Leeds
+ * Date: 26rd April 2021
+ *
+ * Description
+ * ------------
+ * 
+ *
+ */
+module Tr(
+reset,
+clock,
+con0,//contestants
+con1,
+con2,
+chose
+);
+
+input reset;
+input clock;
+
+	endmodule
