@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Transponder
-Wed Apr 28 07:50:02 2021
+Thu May 06 13:23:31 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,10 +36,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Apr 28 07:50:02 2021       ;
+; Analysis & Elaboration Status ; Successful - Thu May 06 13:23:31 2021       ;
 ; Quartus Prime Version         ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                 ; Transponder                                 ;
-; Top-level Entity Name         ; Dy_scan                                     ;
+; Top-level Entity Name         ; State_machine                               ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Dy_scan            ; Transponder        ;
+; Top-level entity name                                                           ; State_machine      ; Transponder        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 28 07:49:45 2021
+    Info: Processing started: Thu May 06 13:23:15 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Transponder -c Transponder --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -173,13 +173,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file tr.v
     Info (12023): Found entity 1: Tr File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Tr.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file state_machine.v
     Info (12023): Found entity 1: State_machine File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/State_machine.v Line: 13
-Info (12021): Found 0 design units, including 0 entities, in source file miniproject.v
-Info (12127): Elaborating entity "Dy_scan" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Dy_scan.v(44): truncated value with size 32 to match size of target (3) File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Dy_scan.v Line: 44
+Warning (10238): Verilog Module Declaration warning at Miniproject.v(19): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "transponder" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Miniproject.v Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file miniproject.v
+    Info (12023): Found entity 1: transponder File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Miniproject.v Line: 13
+Info (12127): Elaborating entity "State_machine" for the top level hierarchy
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Wed Apr 28 07:50:02 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Thu May 06 13:23:31 2021
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:32
 
 
