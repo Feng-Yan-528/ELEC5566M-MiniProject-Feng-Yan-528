@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu May 06 13:23:31 2021
+Analysis & Elaboration Status : Successful - Sat May 08 17:00:52 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Transponder
-Top-level Entity Name : State_machine
+Top-level Entity Name : transponder
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

@@ -64,7 +64,7 @@ always @(posedge clock or negedge reset)
             daout <= a3[7:4];bs<=6'b010000;end
      3'b110:
 			begin
-            daout <= a3[3:0];bs<=4'b100000;end
+            daout <= a3[3:0];bs<=6'b100000;end
 				
 			default :
 			begin
