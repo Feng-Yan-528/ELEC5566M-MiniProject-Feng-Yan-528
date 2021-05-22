@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Transponder
-Sat May 08 17:00:52 2021
+Sat May 22 19:55:07 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -9,9 +9,12 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "Tr:tr"
-  6. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_5:fd
+  5. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_10:f10
+  6. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_1:f1
+  7. Analysis & Elaboration Settings
+  8. Port Connectivity Checks: "Tr:tr"
+  9. Analysis & Elaboration Messages
 
 
 
@@ -37,7 +40,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat May 08 17:00:52 2021       ;
+; Analysis & Elaboration Status ; Successful - Sat May 22 19:55:07 2021       ;
 ; Quartus Prime Version         ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                 ; Transponder                                 ;
 ; Top-level Entity Name         ; transponder                                 ;
@@ -66,6 +69,39 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_5:fd ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 251   ; Signed Integer                                      ;
+; N              ; 500   ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_10:f10 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; WIDTH          ; 501   ; Signed Integer                                        ;
+; N              ; 1000  ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_1:f1 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 51    ; Signed Integer                                      ;
+; N              ; 100   ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -171,9 +207,23 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat May 08 17:00:36 2021
+    Info: Processing started: Sat May 22 19:54:51 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Transponder -c Transponder --analysis_and_elaboration
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file seg_display.v
+    Info (12023): Found entity 1: Seg_display File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v Line: 11
+Info (12021): Found 0 design units, including 0 entities, in source file f_5.v
+Info (12021): Found 0 design units, including 0 entities, in source file f_10.v
+Info (12021): Found 0 design units, including 0 entities, in source file f_1.v
+Info (12021): Found 4 design units, including 4 entities, in source file fd.v
+    Info (12023): Found entity 1: FD File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 13
+    Info (12023): Found entity 2: F_1 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 59
+    Info (12023): Found entity 3: F_5 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 131
+    Info (12023): Found entity 4: F_10 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 201
+Info (12021): Found 1 design units, including 1 entities, in source file counter.v
+    Info (12023): Found entity 1: Counter File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file countdown.v
+    Info (12023): Found entity 1: Countdown File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file transponder.v
     Info (12023): Found entity 1: transponder File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file score.v
@@ -185,11 +235,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file tr.v
 Info (12021): Found 1 design units, including 1 entities, in source file state_machine.v
     Info (12023): Found entity 1: State_machine File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/State_machine.v Line: 13
 Info (12127): Elaborating entity "transponder" for the top level hierarchy
-Info (12128): Elaborating entity "Tr" for hierarchy "Tr:tr" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 35
+Info (12128): Elaborating entity "Tr" for hierarchy "Tr:tr" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 41
+Info (12128): Elaborating entity "Countdown" for hierarchy "Countdown:countdown" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 49
+Info (12128): Elaborating entity "FD" for hierarchy "Countdown:countdown|FD:f" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 34
+Info (12128): Elaborating entity "F_5" for hierarchy "Countdown:countdown|FD:f|F_5:fd" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 31
+Info (12128): Elaborating entity "F_10" for hierarchy "Countdown:countdown|FD:f|F_10:f10" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 37
+Info (12128): Elaborating entity "F_1" for hierarchy "Countdown:countdown|FD:f|F_1:f1" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 43
+Info (12128): Elaborating entity "Counter" for hierarchy "Countdown:countdown|Counter:counter" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 42
+Info (12128): Elaborating entity "Seg_display" for hierarchy "Countdown:countdown|Seg_display:seg_display" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 51
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Sat May 08 17:00:52 2021
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Sat May 22 19:55:07 2021
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Total CPU time (on all processors): 00:00:34
 
 

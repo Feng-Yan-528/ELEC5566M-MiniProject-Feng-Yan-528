@@ -52,12 +52,38 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BOARD "DE1-SoC Board"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE Seg_display.v
+set_global_assignment -name VERILOG_FILE F_5.v
+set_global_assignment -name VERILOG_FILE F_10.v
+set_global_assignment -name VERILOG_FILE F_1.v
+set_global_assignment -name VERILOG_FILE FD.v
+set_global_assignment -name VERILOG_FILE Counter.v
+set_global_assignment -name VERILOG_FILE Countdown.v
 set_global_assignment -name VERILOG_FILE transponder.v
 set_global_assignment -name VERILOG_FILE Score.v
 set_global_assignment -name VERILOG_FILE Dy_scan.v
 set_global_assignment -name VERILOG_FILE Tr.v
 set_global_assignment -name VERILOG_FILE State_machine.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_AH28 -to bs0[6]
+set_location_assignment PIN_AG28 -to bs0[5]
+set_location_assignment PIN_AF28 -to bs0[4]
+set_location_assignment PIN_AG27 -to bs0[3]
+set_location_assignment PIN_AE28 -to bs0[2]
+set_location_assignment PIN_AE27 -to bs0[1]
+set_location_assignment PIN_AE26 -to bs0[0]
+set_location_assignment PIN_AD27 -to bs1[6]
+set_location_assignment PIN_AF30 -to bs1[5]
+set_location_assignment PIN_AF29 -to bs1[4]
+set_location_assignment PIN_AG30 -to bs1[3]
+set_location_assignment PIN_AH30 -to bs1[2]
+set_location_assignment PIN_AH29 -to bs1[1]
+set_location_assignment PIN_AJ29 -to bs1[0]
+set_location_assignment PIN_AF14 -to clock
+set_location_assignment PIN_Y16 -to reset
+set_location_assignment PIN_AA14 -to con0
+set_location_assignment PIN_AA15 -to con1
+set_location_assignment PIN_W15 -to con2
