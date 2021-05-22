@@ -1,0 +1,5 @@
+
+State Machine - |transponder|Countdown:countdown|Counter:counter|state_Counter
+Name state_Counter.Stop_STATE 
+state_Counter.Start_STATE 0 
+state_Counter.Stop_STATE 1 

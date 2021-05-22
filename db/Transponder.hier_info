@@ -4,21 +4,21 @@ clock => clock.IN2
 con0 => con0.IN1
 con1 => con1.IN1
 con2 => con2.IN1
-bs0[0] <= Countdown:countdown.bs0
-bs0[1] <= Countdown:countdown.bs0
-bs0[2] <= Countdown:countdown.bs0
-bs0[3] <= Countdown:countdown.bs0
-bs0[4] <= Countdown:countdown.bs0
-bs0[5] <= Countdown:countdown.bs0
-bs0[6] <= Countdown:countdown.bs0
-bs1[0] <= Countdown:countdown.bs1
-bs1[1] <= Countdown:countdown.bs1
-bs1[2] <= Countdown:countdown.bs1
-bs1[3] <= Countdown:countdown.bs1
-bs1[4] <= Countdown:countdown.bs1
-bs1[5] <= Countdown:countdown.bs1
-bs1[6] <= Countdown:countdown.bs1
-beep <= Countdown:countdown.beep
+bs0[0] << Countdown:countdown.bs0
+bs0[1] << Countdown:countdown.bs0
+bs0[2] << Countdown:countdown.bs0
+bs0[3] << Countdown:countdown.bs0
+bs0[4] << Countdown:countdown.bs0
+bs0[5] << Countdown:countdown.bs0
+bs0[6] << Countdown:countdown.bs0
+bs1[0] << Countdown:countdown.bs1
+bs1[1] << Countdown:countdown.bs1
+bs1[2] << Countdown:countdown.bs1
+bs1[3] << Countdown:countdown.bs1
+bs1[4] << Countdown:countdown.bs1
+bs1[5] << Countdown:countdown.bs1
+bs1[6] << Countdown:countdown.bs1
+beep << Countdown:countdown.beep
 
 
 |transponder|Tr:tr
@@ -47,6 +47,7 @@ bs0[3] <= Seg_display:seg_display.bs0
 bs0[4] <= Seg_display:seg_display.bs0
 bs0[5] <= Seg_display:seg_display.bs0
 bs0[6] <= Seg_display:seg_display.bs0
+C_en => C_en.IN1
 bs1[0] <= Seg_display:seg_display.bs1
 bs1[1] <= Seg_display:seg_display.bs1
 bs1[2] <= Seg_display:seg_display.bs1
@@ -3299,31 +3300,35 @@ clock_f <= clock_f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |transponder|Countdown:countdown|Counter:counter
-clock_1 => TimeL[0]~reg0.CLK
-clock_1 => TimeL[1]~reg0.CLK
-clock_1 => TimeL[2]~reg0.CLK
-clock_1 => TimeL[3]~reg0.CLK
-clock_1 => TimeH[0]~reg0.CLK
-clock_1 => TimeH[1]~reg0.CLK
-clock_1 => TimeH[2]~reg0.CLK
-clock_1 => TimeH[3]~reg0.CLK
-reset => TimeL[0]~reg0.PRESET
-reset => TimeL[1]~reg0.ACLR
-reset => TimeL[2]~reg0.PRESET
-reset => TimeL[3]~reg0.ACLR
-reset => TimeH[0]~reg0.PRESET
-reset => TimeH[1]~reg0.ACLR
-reset => TimeH[2]~reg0.ACLR
-reset => TimeH[3]~reg0.ACLR
-TimeH[0] <= TimeH[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeH[1] <= TimeH[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeH[2] <= TimeH[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeH[3] <= TimeH[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeL[0] <= TimeL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeL[1] <= TimeL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeL[2] <= TimeL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TimeL[3] <= TimeL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-beep <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1 => TimeL_1[0].CLK
+clock_1 => TimeL_1[1].CLK
+clock_1 => TimeL_1[2].CLK
+clock_1 => TimeL_1[3].CLK
+clock_1 => TimeH_1[0].CLK
+clock_1 => TimeH_1[1].CLK
+clock_1 => TimeH_1[2].CLK
+clock_1 => TimeH_1[3].CLK
+clock_1 => state_Counter~1.DATAIN
+reset => TimeL_1[0].PRESET
+reset => TimeL_1[1].ACLR
+reset => TimeL_1[2].PRESET
+reset => TimeL_1[3].ACLR
+reset => TimeH_1[0].PRESET
+reset => TimeH_1[1].ACLR
+reset => TimeH_1[2].ACLR
+reset => TimeH_1[3].ACLR
+reset => state_Counter~3.DATAIN
+TimeH[0] <= TimeH.DB_MAX_OUTPUT_PORT_TYPE
+TimeH[1] <= TimeH.DB_MAX_OUTPUT_PORT_TYPE
+TimeH[2] <= TimeH.DB_MAX_OUTPUT_PORT_TYPE
+TimeH[3] <= TimeH.DB_MAX_OUTPUT_PORT_TYPE
+TimeL[0] <= TimeL.DB_MAX_OUTPUT_PORT_TYPE
+TimeL[1] <= TimeL.DB_MAX_OUTPUT_PORT_TYPE
+TimeL[2] <= TimeL.DB_MAX_OUTPUT_PORT_TYPE
+TimeL[3] <= TimeL.DB_MAX_OUTPUT_PORT_TYPE
+C_en => state_Counter.DATAB
+C_en => state_Counter.DATAB
+beep <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |transponder|Countdown:countdown|Seg_display:seg_display

@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Transponder
-Sat May 22 19:55:07 2021
+Analysis & Synthesis report for Transponder
+Sat May 22 23:35:51 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -7,14 +7,23 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_5:fd
-  5. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_10:f10
-  6. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_1:f1
-  7. Analysis & Elaboration Settings
-  8. Port Connectivity Checks: "Tr:tr"
-  9. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |transponder|Countdown:countdown|Counter:counter|state_Counter
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_5:fd
+ 14. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_10:f10
+ 15. Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_1:f1
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -37,75 +46,31 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat May 22 19:55:07 2021       ;
-; Quartus Prime Version         ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name                 ; Transponder                                 ;
-; Top-level Entity Name         ; transponder                                 ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_5:fd ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 251   ; Signed Integer                                      ;
-; N              ; 500   ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_10:f10 ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; WIDTH          ; 501   ; Signed Integer                                        ;
-; N              ; 1000  ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_1:f1 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 51    ; Signed Integer                                      ;
-; N              ; 100   ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat May 22 23:35:51 2021       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; Transponder                                 ;
+; Top-level Entity Name           ; transponder                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 1646                                        ;
+; Total pins                      ; 20                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -192,38 +157,238 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Tr:tr"                                                                               ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; chose ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; Seg_display.v                    ; yes             ; User Verilog HDL File  ; C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v ;         ;
+; FD.v                             ; yes             ; User Verilog HDL File  ; C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v          ;         ;
+; Counter.v                        ; yes             ; User Verilog HDL File  ; C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v     ;         ;
+; Countdown.v                      ; yes             ; User Verilog HDL File  ; C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v   ;         ;
+; transponder.v                    ; yes             ; User Verilog HDL File  ; C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v ;         ;
+; Tr.v                             ; yes             ; User Verilog HDL File  ; C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Tr.v          ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 1128        ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 2010        ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 245         ;
+;     -- 5 input functions                    ; 99          ;
+;     -- 4 input functions                    ; 43          ;
+;     -- <=3 input functions                  ; 1623        ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 1646        ;
+;                                             ;             ;
+; I/O pins                                    ; 20          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 1638        ;
+; Total fan-out                               ; 11963       ;
+; Average fan-out                             ; 3.24        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-------------+--------------+
+; |transponder                    ; 2010 (0)            ; 1646 (0)                  ; 0                 ; 0          ; 20   ; 0            ; |transponder                                             ; transponder ; work         ;
+;    |Countdown:countdown|        ; 2007 (0)            ; 1643 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown                         ; Countdown   ; work         ;
+;       |Counter:counter|         ; 22 (22)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown|Counter:counter         ; Counter     ; work         ;
+;       |FD:f|                    ; 1969 (0)            ; 1612 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown|FD:f                    ; FD          ; work         ;
+;          |F_10:f10|             ; 1221 (1221)         ; 1004 (1004)               ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown|FD:f|F_10:f10           ; F_10        ; work         ;
+;          |F_1:f1|               ; 131 (131)           ; 104 (104)                 ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown|FD:f|F_1:f1             ; F_1         ; work         ;
+;          |F_5:fd|               ; 617 (617)           ; 504 (504)                 ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown|FD:f|F_5:fd             ; F_5         ; work         ;
+;       |Seg_display:seg_display| ; 16 (16)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |transponder|Countdown:countdown|Seg_display:seg_display ; Seg_display ; work         ;
+;    |Tr:tr|                      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |transponder|Tr:tr                                       ; Tr          ; work         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------+
+; State Machine - |transponder|Countdown:countdown|Counter:counter|state_Counter ;
++---------------------------+----------------------------------------------------+
+; Name                      ; state_Counter.Stop_STATE                           ;
++---------------------------+----------------------------------------------------+
+; state_Counter.Start_STATE ; 0                                                  ;
+; state_Counter.Stop_STATE  ; 1                                                  ;
++---------------------------+----------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                       ;
++-----------------------------------------------------+--------------------+
+; Register name                                       ; Reason for Removal ;
++-----------------------------------------------------+--------------------+
+; Countdown:countdown|Counter:counter|state_Counter~5 ; Lost fanout        ;
+; Total Number of Removed Registers = 1               ;                    ;
++-----------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1646  ;
+; Number of registers using Synchronous Clear  ; 1606  ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 1638  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------+
+; Inverted Register Statistics                                 ;
++----------------------------------------------------+---------+
+; Inverted Register                                  ; Fan out ;
++----------------------------------------------------+---------+
+; Countdown:countdown|Seg_display:seg_display|bs0[6] ; 2       ;
+; Countdown:countdown|Seg_display:seg_display|bs1[6] ; 2       ;
+; Countdown:countdown|Counter:counter|TimeL_1[0]     ; 6       ;
+; Countdown:countdown|Counter:counter|TimeH_1[0]     ; 6       ;
+; Countdown:countdown|Counter:counter|TimeL_1[2]     ; 6       ;
+; Total number of inverted registers = 5             ;         ;
++----------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |transponder|Countdown:countdown|Counter:counter|TimeL_1[3]     ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; Yes        ; |transponder|Countdown:countdown|Seg_display:seg_display|bs0[0] ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; Yes        ; |transponder|Countdown:countdown|Seg_display:seg_display|bs1[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |transponder|Countdown:countdown|Counter:counter|TimeL_1[2]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_5:fd ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 251   ; Signed Integer                                      ;
+; N              ; 500   ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_10:f10 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; WIDTH          ; 501   ; Signed Integer                                        ;
+; N              ; 1000  ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Countdown:countdown|FD:f|F_1:f1 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 51    ; Signed Integer                                      ;
+; N              ; 100   ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 1646                        ;
+;     CLR               ; 20                          ;
+;     CLR SCLR          ; 1606                        ;
+;     ENA CLR           ; 12                          ;
+;     plain             ; 8                           ;
+; arriav_lcell_comb     ; 2012                        ;
+;     arith             ; 1606                        ;
+;         1 data inputs ; 1606                        ;
+;     normal            ; 406                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 43                          ;
+;         5 data inputs ; 99                          ;
+;         6 data inputs ; 245                         ;
+; boundary_port         ; 20                          ;
+;                       ;                             ;
+; Max LUT depth         ; 41.90                       ;
+; Average LUT depth     ; 17.92                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat May 22 19:54:51 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Transponder -c Transponder --analysis_and_elaboration
+    Info: Processing started: Sat May 22 23:35:32 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Transponder -c Transponder
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file seg_display.v
     Info (12023): Found entity 1: Seg_display File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v Line: 11
-Info (12021): Found 0 design units, including 0 entities, in source file f_5.v
-Info (12021): Found 0 design units, including 0 entities, in source file f_10.v
-Info (12021): Found 0 design units, including 0 entities, in source file f_1.v
+Warning (12019): Can't analyze file -- file F_5.v is missing
+Warning (12019): Can't analyze file -- file F_10.v is missing
+Warning (12019): Can't analyze file -- file F_1.v is missing
 Info (12021): Found 4 design units, including 4 entities, in source file fd.v
     Info (12023): Found entity 1: FD File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 13
     Info (12023): Found entity 2: F_1 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 59
     Info (12023): Found entity 3: F_5 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 131
     Info (12023): Found entity 4: F_10 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 201
 Info (12021): Found 1 design units, including 1 entities, in source file counter.v
-    Info (12023): Found entity 1: Counter File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v Line: 11
+    Info (12023): Found entity 1: Counter File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file countdown.v
-    Info (12023): Found entity 1: Countdown File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 12
+    Info (12023): Found entity 1: Countdown File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file transponder.v
     Info (12023): Found entity 1: transponder File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file score.v
@@ -235,18 +400,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file tr.v
 Info (12021): Found 1 design units, including 1 entities, in source file state_machine.v
     Info (12023): Found entity 1: State_machine File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/State_machine.v Line: 13
 Info (12127): Elaborating entity "transponder" for the top level hierarchy
-Info (12128): Elaborating entity "Tr" for hierarchy "Tr:tr" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 41
-Info (12128): Elaborating entity "Countdown" for hierarchy "Countdown:countdown" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 49
-Info (12128): Elaborating entity "FD" for hierarchy "Countdown:countdown|FD:f" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 34
+Info (12128): Elaborating entity "Tr" for hierarchy "Tr:tr" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 42
+Info (12128): Elaborating entity "Countdown" for hierarchy "Countdown:countdown" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v Line: 51
+Info (12128): Elaborating entity "FD" for hierarchy "Countdown:countdown|FD:f" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 37
 Info (12128): Elaborating entity "F_5" for hierarchy "Countdown:countdown|FD:f|F_5:fd" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 31
 Info (12128): Elaborating entity "F_10" for hierarchy "Countdown:countdown|FD:f|F_10:f10" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 37
 Info (12128): Elaborating entity "F_1" for hierarchy "Countdown:countdown|FD:f|F_1:f1" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v Line: 43
-Info (12128): Elaborating entity "Counter" for hierarchy "Countdown:countdown|Counter:counter" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 42
-Info (12128): Elaborating entity "Seg_display" for hierarchy "Countdown:countdown|Seg_display:seg_display" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 51
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Sat May 22 19:55:07 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:34
+Info (12128): Elaborating entity "Counter" for hierarchy "Countdown:countdown|Counter:counter" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 46
+Info (12128): Elaborating entity "Seg_display" for hierarchy "Countdown:countdown|Seg_display:seg_display" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v Line: 55
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2034 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 2014 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4841 megabytes
+    Info: Processing ended: Sat May 22 23:35:51 2021
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:36
 
 

@@ -6,7 +6,8 @@
  *
  * Description
  * ------------
- * Connect each module
+ * This is a countdown IP core, which is used as a countdown when 
+ * the questions are displayed to limit the contestant's answer time
  */
  
 module Countdown(
@@ -14,11 +15,13 @@ clock,
 reset,
 beep,
 bs0,
+C_en,
 bs1
 );
 
  input clock;
  input reset;
+ input C_en;
  output [6:0] bs0;
  output [6:0] bs1;
  output beep;
@@ -36,6 +39,7 @@ bs1
  Counter counter(
  .clock_1(c),
  .reset(reset),
+ .C_en(C_en),
  .TimeH(TimeH),
  .TimeL(TimeL),
  .beep(beep)

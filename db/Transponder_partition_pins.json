@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bs0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bs0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bs0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bs0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bs0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bs0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bs0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "beep",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "con0",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "con2",
+					"strict" : false
+				},
+				{
+					"name" : "con1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
