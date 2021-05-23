@@ -3,195 +3,195 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -15.320
-TNS   : -13505.432
+Slack : -15.303
+TNS   : -13166.882
 
 Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : -8.336
-TNS   : -5066.976
+Slack : -7.997
+TNS   : -4389.369
 
 Type  : Slow 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -3.773
-TNS   : -459.054
+Slack : -3.912
+TNS   : -464.177
 
 Type  : Slow 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -1.958
-TNS   : -54.297
+Slack : -3.223
+TNS   : -53.505
 
-Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.294
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.221
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.295
+Slack : 0.286
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : 0.309
+Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.458
+Slack : 0.638
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.450
-TNS   : -741.711
+Slack : -0.394
+TNS   : -665.756
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
 Slack : -0.394
-TNS   : -366.646
+TNS   : -349.310
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
 Slack : -0.394
-TNS   : -77.613
+TNS   : -67.356
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
 Slack : -0.394
-TNS   : -27.710
+TNS   : -19.162
 
 Type  : Slow 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -16.157
-TNS   : -13339.541
+Slack : -16.142
+TNS   : -13062.613
 
 Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : -8.653
-TNS   : -4915.096
+Slack : -8.359
+TNS   : -4279.671
 
 Type  : Slow 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -3.698
-TNS   : -447.208
+Slack : -3.907
+TNS   : -459.458
 
 Type  : Slow 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -2.180
-TNS   : -52.963
+Slack : -3.425
+TNS   : -52.190
 
 Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : 0.345
+Slack : 0.268
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.352
+Slack : 0.348
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.352
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.469
+Slack : 0.628
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.445
-TNS   : -736.700
+Slack : -0.394
+TNS   : -650.062
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
 Slack : -0.394
-TNS   : -421.084
+TNS   : -369.244
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
 Slack : -0.394
-TNS   : -77.800
+TNS   : -66.072
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
 Slack : -0.394
-TNS   : -28.535
+TNS   : -18.686
 
 Type  : Fast 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -8.437
-TNS   : -8328.550
+Slack : -8.626
+TNS   : -8026.874
 
 Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : -4.949
-TNS   : -2909.015
+Slack : -4.397
+TNS   : -2456.078
 
 Type  : Fast 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -1.918
-TNS   : -225.060
+Slack : -1.960
+TNS   : -227.789
 
 Type  : Fast 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -0.822
-TNS   : -23.250
-
-Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.095
-TNS   : 0.000
+Slack : -1.449
+TNS   : -24.183
 
 Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.102
+Slack : 0.124
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.168
+Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : 0.130
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : 0.200
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
+Slack : 0.272
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.249
-TNS   : -132.217
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -0.114
-TNS   : -3.844
+Slack : -0.127
+TNS   : -32.633
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.090
-TNS   : -52.457
+Slack : -0.092
+TNS   : -46.829
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -0.040
-TNS   : -3.317
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
+Slack : 0.046
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -8.436
-TNS   : -7456.959
+Slack : -8.345
+TNS   : -7186.186
 
 Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : -4.312
-TNS   : -2555.564
+Slack : -4.054
+TNS   : -2154.569
 
 Type  : Fast 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -1.676
-TNS   : -197.672
+Slack : -1.740
+TNS   : -201.536
 
 Type  : Fast 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -0.886
-TNS   : -19.499
+Slack : -1.449
+TNS   : -20.165
 
 Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.129
+Slack : 0.126
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.129
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.155
+Slack : 0.130
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : 0.189
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
+Slack : 0.251
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.164
-TNS   : -77.277
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -0.089
-TNS   : -3.076
+Slack : -0.097
+TNS   : -13.593
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.088
-TNS   : -58.970
+Slack : -0.089
+TNS   : -49.660
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -0.016
-TNS   : -0.684
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
+Slack : 0.082
+TNS   : 0.000
 
 ------------------------------------------------------------

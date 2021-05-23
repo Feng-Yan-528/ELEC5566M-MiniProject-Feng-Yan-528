@@ -1,5 +1,5 @@
 Flow report for Transponder
-Sat May 22 23:39:09 2021
+Sun May 23 16:32:39 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat May 22 23:38:26 2021       ;
+; Flow Status                     ; Successful - Sun May 23 16:31:54 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Transponder                                 ;
 ; Top-level Entity Name           ; transponder                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,286 / 32,070 ( 4 % )                      ;
-; Total registers                 ; 1947                                        ;
-; Total pins                      ; 20 / 457 ( 4 % )                            ;
+; Logic utilization (in ALMs)     ; 1,287 / 32,070 ( 4 % )                      ;
+; Total registers                 ; 1871                                        ;
+; Total pins                      ; 21 / 457 ( 5 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/22/2021 23:35:34 ;
+; Start date & time ; 05/23/2021 16:28:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Transponder         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 18121611664596.162172293313740         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 18121611664596.162178373416560         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -99,11 +99,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4841 MB             ; 00:00:35                           ;
-; Fitter                    ; 00:02:21     ; 2.1                     ; 6706 MB             ; 00:06:46                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 4843 MB             ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:42     ; 2.0                     ; 5272 MB             ; 00:01:00                           ;
-; Total                     ; 00:03:33     ; --                      ; --                  ; 00:08:32                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4846 MB             ; 00:00:37                           ;
+; Fitter                    ; 00:02:26     ; 2.2                     ; 6700 MB             ; 00:06:58                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4835 MB             ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:44     ; 2.0                     ; 5275 MB             ; 00:01:02                           ;
+; Total                     ; 00:03:41     ; --                      ; --                  ; 00:08:48                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

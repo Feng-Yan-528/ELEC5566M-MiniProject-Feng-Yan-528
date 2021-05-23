@@ -64,11 +64,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "detect",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "con0",
+					"name" : "con1",
 					"strict" : false
 				},
 				{
@@ -76,11 +80,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "con2",
+					"name" : "con0",
 					"strict" : false
 				},
 				{
-					"name" : "con1",
+					"name" : "con2",
 					"strict" : false
 				}
 			]

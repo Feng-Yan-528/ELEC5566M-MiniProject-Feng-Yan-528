@@ -18,16 +18,14 @@
  con2,
  bs0,
  bs1,
- beep
+ beep,
+ detect 
  );
-input   reset;
-input   clock;
-input   con0;
-input   con1;
-input   con2;
+input   reset,clock,con0,con1,con2;
 
+output beep,detect;
 output[6:0] bs0,bs1;
-output beep;
+
 
 wire [2:0]chose;
 wire       Judge;    
@@ -50,7 +48,9 @@ Countdown countdown(
 .bs1(bs1)
 );
 
-assign Judge=~(chose[0]==1)||(chose[1]==1)||(chose[2]==1);
+
+assign Judge=!((chose[0]==1)||(chose[1]==1)||(chose[2]==1))&&1'b1;
+assign detect= Judge;
 
 endmodule
 

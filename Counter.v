@@ -16,7 +16,7 @@
  TimeH,
  TimeL,
  C_en,//Determining whether to count or not
- beep 
+ beep
  );
  input clock_1;
  input reset;
@@ -27,6 +27,7 @@
 
  
  output beep;
+ 
 //A state machine that defines a counter, divided into a start state and a stop state	
  reg [1:0] state_Counter;
  localparam Start_STATE  = 2'b01;
@@ -34,8 +35,9 @@
 	
  
  
- initial {TimeH_1,TimeL_1} = 8'h15;
- initial TimeH_2=4'b0,TimeL_2 = 4'b0;
+ initial begin
+{TimeH_2,TimeL_2} = 8'h0;
+ end
  
 always@(posedge clock_1 or negedge reset) begin
 	if(!reset)
@@ -76,22 +78,23 @@ end
           Start_STATE: begin 
 			 if (!C_en) begin 
                state_Counter <= Stop_STATE;
-          end 
+          end else
           if (C_en) begin
                state_Counter <= Start_STATE;
           end
 			end
 			 Stop_STATE: begin
-			 if (!C_en) begin 
+			 if (C_en) begin 
                state_Counter <= Stop_STATE;
-          end 
-          if (C_en) begin
+          end else
+          if (!C_en) begin
                state_Counter <= Stop_STATE;
           end
 			end
 		endcase
 	 end
 end
+
 
 assign beep =({TimeH,TimeL}==8'h00);//When the count is 0, the buzzer goes off.
 endmodule
