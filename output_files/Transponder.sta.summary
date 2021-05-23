@@ -3,195 +3,227 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -15.303
-TNS   : -13166.882
+Slack : -15.241
+TNS   : -12527.815
 
 Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : -7.997
-TNS   : -4389.369
+Slack : -8.043
+TNS   : -9124.940
 
 Type  : Slow 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -3.912
-TNS   : -464.177
+Slack : -3.558
+TNS   : -413.088
 
 Type  : Slow 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -3.223
-TNS   : -53.505
+Slack : -2.957
+TNS   : -56.800
+
+Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : 0.291
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : 0.221
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.286
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.299
+Slack : 0.345
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.638
+Slack : 0.546
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.394
-TNS   : -665.756
+Type  : Slow 1100mV 85C Model Recovery 'clock'
+Slack : -1.000
+TNS   : -64.039
+
+Type  : Slow 1100mV 85C Model Removal 'clock'
+Slack : 0.776
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.394
-TNS   : -349.310
+Slack : -2.174
+TNS   : -7219.542
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : -0.533
+TNS   : -818.362
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
 Slack : -0.394
-TNS   : -67.356
+TNS   : -65.296
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
 Slack : -0.394
-TNS   : -19.162
+TNS   : -22.662
 
 Type  : Slow 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -16.142
-TNS   : -13062.613
+Slack : -16.060
+TNS   : -12435.687
 
 Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : -8.359
-TNS   : -4279.671
+Slack : -8.443
+TNS   : -8688.131
 
 Type  : Slow 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -3.907
-TNS   : -459.458
+Slack : -3.459
+TNS   : -401.013
 
 Type  : Slow 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -3.425
-TNS   : -52.190
+Slack : -3.121
+TNS   : -55.496
 
 Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : 0.268
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.348
+Slack : 0.316
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.356
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
+Slack : 0.405
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.628
+Slack : 0.529
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.394
-TNS   : -650.062
+Type  : Slow 1100mV 0C Model Recovery 'clock'
+Slack : -0.944
+TNS   : -58.153
+
+Type  : Slow 1100mV 0C Model Removal 'clock'
+Slack : 0.716
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.394
-TNS   : -369.244
+Slack : -2.174
+TNS   : -7252.339
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : -0.534
+TNS   : -809.523
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
 Slack : -0.394
-TNS   : -66.072
+TNS   : -66.601
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
 Slack : -0.394
-TNS   : -18.686
+TNS   : -22.708
 
 Type  : Fast 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -8.626
-TNS   : -8026.874
+Slack : -8.304
+TNS   : -7634.298
 
 Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : -4.397
-TNS   : -2456.078
+Slack : -4.600
+TNS   : -4816.869
 
 Type  : Fast 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -1.960
-TNS   : -227.789
+Slack : -1.841
+TNS   : -205.506
 
 Type  : Fast 1100mV 85C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -1.449
-TNS   : -24.183
-
-Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.124
-TNS   : 0.000
+Slack : -1.342
+TNS   : -23.955
 
 Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.130
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
+Slack : 0.165
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : 0.159
+Slack : 0.182
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.272
+Slack : 0.245
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.127
-TNS   : -32.633
+Type  : Fast 1100mV 85C Model Recovery 'clock'
+Slack : -0.273
+TNS   : -4.614
+
+Type  : Fast 1100mV 85C Model Removal 'clock'
+Slack : 0.494
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.092
-TNS   : -46.829
+Slack : -2.174
+TNS   : -6781.211
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.040
-TNS   : 0.000
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : -0.283
+TNS   : -175.221
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.046
+Slack : -0.004
+TNS   : -0.054
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
+Slack : 0.021
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -8.345
-TNS   : -7186.186
+Slack : -8.353
+TNS   : -6841.380
 
 Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : -4.054
-TNS   : -2154.569
+Slack : -4.120
+TNS   : -4016.372
 
 Type  : Fast 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : -1.740
-TNS   : -201.536
+Slack : -1.602
+TNS   : -177.993
 
 Type  : Fast 1100mV 0C Model Setup 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : -1.449
-TNS   : -20.165
-
-Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.126
-TNS   : 0.000
+Slack : -1.341
+TNS   : -20.217
 
 Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : 0.130
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_10:f10|clock_0'
+Slack : 0.159
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : 0.162
+Slack : 0.174
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.251
+Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
-Slack : -0.097
-TNS   : -13.593
+Type  : Fast 1100mV 0C Model Recovery 'clock'
+Slack : -0.160
+TNS   : -0.589
+
+Type  : Fast 1100mV 0C Model Removal 'clock'
+Slack : 0.444
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.089
-TNS   : -49.660
+Slack : -2.174
+TNS   : -6790.248
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
-Slack : 0.066
-TNS   : 0.000
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_5:fd|clock_0'
+Slack : -0.217
+TNS   : -124.482
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_1:f1|clock_0'
-Slack : 0.082
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Countdown:countdown|FD:f|F_10:f10|clock_0'
+Slack : 0.056
 TNS   : 0.000
 
 ------------------------------------------------------------

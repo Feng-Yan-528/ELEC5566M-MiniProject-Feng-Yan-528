@@ -1,13 +1,13 @@
 /*
  * Tr
  * ---------------------
+ * By: Feng Yan 
  * For: University of Leeds
  * Date: 25rd April 2021
  *
  * Description
  * ------------
- * 
- *
+ * This is a quick answer latch module, the contestants' quick answer signal latch
  */
 module Tr(
 reset,
