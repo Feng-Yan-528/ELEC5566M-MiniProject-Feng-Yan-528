@@ -24,7 +24,7 @@ output     LT24Rd_n;
 output     LT24CS_n;
 output     LT24RS;
 output     LT24Reset_n;
-output [     15:0] LT24Data;
+output [15:0] LT24Data;
 output     LT24LCDOn;
 
 wire [2:0]chose;

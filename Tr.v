@@ -51,6 +51,12 @@ always @(negedge reset or posedge clock)
       end
    end
 	
-	
+always @(negedge reset or posedge clock)
+   begin
+      if (!reset)
+      begin
+         chose <= 3'b000;
+      end
+      else if()  begin
 	
 	endmodule
