@@ -11,14 +11,14 @@
  */
  
  module transponder(
- reset,clock,con0,con1,con2,bs0,bs1,beep,
+ reset,clock,con0,con1,con2,bs0,bs1,bs2,bs3,beep,
  LT24Wr_n,LT24Rd_n,LT24CS_n,LT24RS,LT24Reset_n,LT24Data,LT24LCDOn,
  detect 
  );
 input   reset,clock,con0,con1,con2;
 
 output beep,detect;
-output[6:0] bs0,bs1;
+output[6:0] bs0,bs1,bs2,bs3;
 output     LT24Wr_n;
 output     LT24Rd_n;
 output     LT24CS_n;
@@ -29,16 +29,26 @@ output     LT24LCDOn;
 
 wire [2:0]chose;
 wire       Judge;    
-
+wire [3:0]segH,segL;
 Tr tr(
 .reset(reset),
 .clock(clock),
 .con0(con0),
 .con1(con1),
 .con2(con2),
+.TimeH(segH),
+.TimeL(segL),
 .chose(chose)
 );
 
+Seg_display seg_display(
+ .clock(clock),
+ .reset(reset),
+ .TimeH(segH),
+ .TimeL(segL),
+ .bs0(bs2),
+ .bs1(bs3)
+ );
 Countdown countdown(
 .clock(clock),
 .reset(reset),
@@ -50,11 +60,9 @@ Countdown countdown(
 
 Bigscreen bigscreen(
  .clock(clock),
- .globalReset(globalReset),  
+ .globalReset(Reset),  
  .w(w),
  .m(m),
- .a(a),
- .b(b),
  .LT24Wr_n(LT24Wr_n),
  .LT24Rd_n(LT24Rd_n),
  .LT24CS_n(LT24CS_n),

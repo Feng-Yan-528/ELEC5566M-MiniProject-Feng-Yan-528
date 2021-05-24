@@ -60,6 +60,30 @@
 					"strict" : false
 				},
 				{
+					"name" : "bs2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bs2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bs2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bs2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bs2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bs2[6]",
+					"strict" : false
+				},
+				{
 					"name" : "beep",
 					"strict" : false
 				},
@@ -156,11 +180,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "con0",
+					"name" : "con2",
 					"strict" : false
 				},
 				{
-					"name" : "con2",
+					"name" : "con0",
 					"strict" : false
 				}
 			]
