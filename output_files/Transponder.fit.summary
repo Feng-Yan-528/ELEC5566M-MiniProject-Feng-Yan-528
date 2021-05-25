@@ -1,16 +1,16 @@
-Fitter Status : Successful - Mon May 24 21:56:10 2021
+Fitter Status : Successful - Tue May 25 12:57:42 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Transponder
 Top-level Entity Name : transponder
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,465 / 32,070 ( 5 % )
-Total registers : 2279
-Total pins : 57 / 457 ( 12 % )
+Logic utilization (in ALMs) : 1,510 / 32,070 ( 5 % )
+Total registers : 2377
+Total pins : 58 / 457 ( 13 % )
 Total virtual pins : 0
-Total block memory bits : 2,097,152 / 4,065,280 ( 52 % )
-Total RAM Blocks : 256 / 397 ( 64 % )
+Total block memory bits : 3,145,728 / 4,065,280 ( 77 % )
+Total RAM Blocks : 384 / 397 ( 97 % )
 Total DSP Blocks : 0 / 87 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

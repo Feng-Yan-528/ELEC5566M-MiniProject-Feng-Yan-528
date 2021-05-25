@@ -53,7 +53,7 @@ always @(negedge reset or posedge clock)
 				TimeH <=4'h0;
 		      TimeL <=4'h2;
          end
-         if ((con2 == 1'b0 | chose[2] == 1'b1) & (~(chose[1] == 1'b1 | chose[0] == 1'b0 )))
+         if ((con2 == 1'b0 | chose[2] == 1'b1) & (~(chose[1] == 1'b1 | chose[0] == 1'b1 )))
          begin
             chose[2] <= 1'b1;
 				TimeH <=4'h0;

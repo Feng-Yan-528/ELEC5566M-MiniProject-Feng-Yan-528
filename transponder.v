@@ -11,13 +11,12 @@
  */
  
  module transponder(
- reset,clock,con0,con1,con2,bs0,bs1,bs2,bs3,beep,
- LT24Wr_n,LT24Rd_n,LT24CS_n,LT24RS,LT24Reset_n,LT24Data,LT24LCDOn,
- detect 
+ reset,clock,con0,con1,con2,bs0,bs1,bs2,bs3,beep,w,refresh,
+ LT24Wr_n,LT24Rd_n,LT24CS_n,LT24RS,LT24Reset_n,LT24Data,LT24LCDOn
  );
-input   reset,clock,con0,con1,con2;
+input   reset,clock,con0,con1,con2,w,refresh;
 
-output beep,detect;
+output beep;
 output[6:0] bs0,bs1,bs2,bs3;
 output     LT24Wr_n;
 output     LT24Rd_n;
@@ -60,9 +59,9 @@ Countdown countdown(
 
 Bigscreen bigscreen(
  .clock(clock),
- .globalReset(Reset),  
+ .globalReset(refresh),  
  .w(w),
- .m(m),
+ .x(Judge),
  .LT24Wr_n(LT24Wr_n),
  .LT24Rd_n(LT24Rd_n),
  .LT24CS_n(LT24CS_n),
@@ -72,8 +71,7 @@ Bigscreen bigscreen(
  .LT24LCDOn(LT24LCDOn)
 );
 
-assign Judge=!((chose[0]==1)||(chose[1]==1)||(chose[2]==1))&&1'b1;
-assign detect= Judge;
+assign Judge=((chose[0]==1)||(chose[1]==1)||(chose[2]==1))||1'b0;
 
 
 

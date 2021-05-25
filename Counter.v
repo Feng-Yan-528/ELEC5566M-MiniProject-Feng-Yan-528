@@ -76,18 +76,18 @@ end
 		 end else begin
       case (state_Counter)
           Start_STATE: begin 
-			 if (!C_en) begin 
-               state_Counter <= Stop_STATE;
-          end else
-          if (C_en) begin
-               state_Counter <= Start_STATE;
-          end
-			end
-			 Stop_STATE: begin
 			 if (C_en) begin 
                state_Counter <= Stop_STATE;
           end else
           if (!C_en) begin
+               state_Counter <= Start_STATE;
+          end
+			end
+			 Stop_STATE: begin
+			 if (!C_en) begin 
+               state_Counter <= Stop_STATE;
+          end else
+          if (C_en) begin
                state_Counter <= Stop_STATE;
           end
 			end

@@ -164,15 +164,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "detect",
-					"strict" : false
-				},
-				{
 					"name" : "reset",
 					"strict" : false
 				},
 				{
 					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "refresh",
 					"strict" : false
 				},
 				{
@@ -185,6 +185,10 @@
 				},
 				{
 					"name" : "con0",
+					"strict" : false
+				},
+				{
+					"name" : "w",
 					"strict" : false
 				}
 			]

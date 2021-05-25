@@ -23,7 +23,7 @@ module Bigscreen (
     output             resetApp,
     
 	 input              w,
-	 input              m,
+//	 input              m,
 
     // LT24 Interface
     output             LT24Wr_n,
@@ -261,21 +261,22 @@ always @ (posedge clock or posedge globalReset) begin
 		 end else begin
       case (stateM)
           A_STATE: begin 
+			 stateM <= A_STATE; 	 
 			 if (x) begin 
-			 stateM <= A_STATE;
-			 end else if (!w)  begin
+			 if (!w)  begin
               stateM <= B_STATE;
           end else if (w) begin
-              stateM <= C_STATE;
+              stateM <= C_STATE;				  
            end
 			end
+		  end
 		    B_STATE: begin 
-          if (!m) begin
+          if (!globalReset) begin
               stateM <= A_STATE;
            end 
 			 end
 		    C_STATE: begin 
-          if (!m) begin
+          if (!globalReset) begin
               stateM <= A_STATE;
           end 
 	      end

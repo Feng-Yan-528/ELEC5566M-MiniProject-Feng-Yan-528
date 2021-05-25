@@ -75,7 +75,6 @@ set_location_assignment PIN_AA14 -to con0
 set_location_assignment PIN_AA15 -to con1
 set_location_assignment PIN_W15 -to con2
 set_location_assignment PIN_Y21 -to beep
-set_location_assignment PIN_W21 -to detect
 set_location_assignment PIN_AD20 -to LT24CS_n
 set_location_assignment PIN_AJ17 -to LT24Data[0]
 set_location_assignment PIN_AJ19 -to LT24Data[1]
@@ -108,9 +107,7 @@ set_global_assignment -name VERILOG_FILE FD.v
 set_global_assignment -name VERILOG_FILE Counter.v
 set_global_assignment -name VERILOG_FILE Countdown.v
 set_global_assignment -name VERILOG_FILE transponder.v
-set_global_assignment -name VERILOG_FILE Score.v
 set_global_assignment -name VERILOG_FILE Tr.v
-set_global_assignment -name VERILOG_FILE State_machine.v
 set_global_assignment -name QIP_FILE TRUE.qip
 set_global_assignment -name QIP_FILE ERROR.qip
 set_location_assignment PIN_AC30 -to bs2[6]
@@ -127,4 +124,6 @@ set_location_assignment PIN_AC25 -to bs3[3]
 set_location_assignment PIN_AD25 -to bs3[2]
 set_location_assignment PIN_AC27 -to bs3[1]
 set_location_assignment PIN_AD26 -to bs3[0]
+set_location_assignment PIN_AB12 -to w
+set_location_assignment PIN_AC12 -to refresh
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
