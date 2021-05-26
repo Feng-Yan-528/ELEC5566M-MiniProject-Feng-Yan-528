@@ -167,9 +167,9 @@ always @ (posedge clock or posedge globalReset) begin
 		  
 
 reg [1:0] stateM;
-localparam A_STATE   = 2'b01;
-localparam B_STATE   = 2'b10;	  
-localparam C_STATE   = 2'b11;	  
+localparam Subject_STATE  = 2'b01;
+localparam Error_STATE    = 2'b10;	  
+localparam True_STATE     = 2'b11;	  
 
 reg   [31:0] rom_addr_1;
 wire  [15:0] rom_rd_1;
@@ -239,15 +239,15 @@ always @ (posedge clock or posedge globalReset) begin
 		  
 always @ (posedge clock ) begin
       case (stateM)
-        A_STATE: begin // Define state A behaviour
+        Subject_STATE: begin // Define state A behaviour
 	    pixelData <= pixelData_0;
        rom_addr  <= rom_addr_0; 
         
-    end B_STATE: begin// Define state B behaviour
+    end Error_STATE: begin// Define state B behaviour
         pixelData <= pixelData_1;
         rom_addr  <=rom_addr_1; 
 		  
-	 end	C_STATE: begin// Define state C behaviour
+	 end True_STATE: begin// Define state C behaviour
         pixelData <= pixelData_2;
         rom_addr  <=rom_addr_2; 
 		end
@@ -257,27 +257,27 @@ end
 
 always @ (posedge clock or posedge globalReset) begin
     if (globalReset) begin
-	     stateM <= A_STATE;
+	     stateM <= Subject_STATE;
 		 end else begin
       case (stateM)
-          A_STATE: begin 
-			 stateM <= A_STATE; 	 
+          Subject_STATE: begin 
+			 stateM <= Subject_STATE; 	 
 			 if (x) begin 
 			 if (!w)  begin
-              stateM <= B_STATE;
+              stateM <= Error_STATE;
           end else if (w) begin
-              stateM <= C_STATE;				  
+              stateM <= True_STATE;				  
            end
 			end
 		  end
-		    B_STATE: begin 
+		    Error_STATE: begin 
           if (!globalReset) begin
-              stateM <= A_STATE;
+              stateM <= Subject_STATE;
            end 
 			 end
-		    C_STATE: begin 
+		    True_STATE: begin 
           if (!globalReset) begin
-              stateM <= A_STATE;
+              stateM <= Subject_STATE;
           end 
 	      end
 		endcase
