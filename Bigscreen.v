@@ -43,7 +43,7 @@ wire  [ 8:0] yAddr;
 reg  [15:0] pixelData;
 wire        pixelReady;
 reg         pixelWrite;
-reg  [15:0] rom_addr;
+reg  [31:0] rom_addr;
 wire   [15:0] rom_rd;
 //
 // LCD Display
@@ -131,7 +131,7 @@ assign  yAddr = yCount;
 //Instantiate the Subject
 //
 
-reg   [15:0] rom_addr_0;
+reg   [31:0] rom_addr_0;
 wire  [15:0] rom_rd_0;
 reg  [15:0] pixelData_0;
 
@@ -171,7 +171,7 @@ localparam A_STATE   = 2'b01;
 localparam B_STATE   = 2'b10;	  
 localparam C_STATE   = 2'b11;	  
 
-reg   [15:0] rom_addr_1;
+reg   [31:0] rom_addr_1;
 wire  [15:0] rom_rd_1;
 ERROR error(
 .address(rom_addr_1),
@@ -204,7 +204,7 @@ always @ (posedge clock or posedge globalReset) begin
 		  end 
 		
 		
-reg   [15:0] rom_addr_2;
+reg   [31:0] rom_addr_2;
 wire  [15:0] rom_rd_2;
 TRUE true(
 .address(rom_addr_2),
