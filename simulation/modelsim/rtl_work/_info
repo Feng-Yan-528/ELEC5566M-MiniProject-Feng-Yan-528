@@ -1,0 +1,446 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation/modelsim
+vBigscreen
+Z1 !s110 1622205232
+!i10b 1
+!s100 naGFYhj0lSfJLfkS<^L_V2
+IR=D=Ek`BV]VcGmQTZHaIi0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1622063898
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Bigscreen.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Bigscreen.v
+Z3 L0 15
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1622205232.000000
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Bigscreen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Bigscreen.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528
+Z8 tCvgOpt 0
+n@bigscreen
+vCountdown
+Z9 !s110 1622205234
+!i10b 1
+!s100 lnQ[loGLL3RJ5Rhdjm>lV2
+I1ez1nQDB<@M[M4fOl4>_F0
+R2
+R0
+w1621718477
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v
+Z10 L0 13
+R4
+r1
+!s85 0
+31
+Z11 !s108 1622205233.000000
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Countdown.v|
+!i113 1
+R6
+R7
+R8
+n@countdown
+vCounter
+Z12 !s110 1622205233
+!i10b 1
+!s100 D<aS0bXjI?dJJd;X`;kME3
+IlQg1Ogm8?H9Td7db9:7H30
+R2
+R0
+w1621928724
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v
+R10
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Counter.v|
+!i113 1
+R6
+R7
+R8
+n@counter
+vERROR
+Z13 !s110 1622205235
+!i10b 1
+!s100 b^?XjOn<hQzmg4X8o6TNH0
+I8bbjo`S2>]`_LNHD`6<Rg3
+R2
+R0
+w1621886273
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/ERROR.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/ERROR.v
+Z14 L0 39
+R4
+r1
+!s85 0
+31
+Z15 !s108 1622205235.000000
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/ERROR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/ERROR.v|
+!i113 1
+R6
+R7
+R8
+n@e@r@r@o@r
+vF_1
+R12
+!i10b 1
+!s100 g3hO`bF]I72RG4g6HQlNi1
+I28i7OnNglgkOa8HXWXhQI0
+R2
+R0
+Z16 w1621708753
+Z17 8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v
+Z18 FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v
+L0 59
+R4
+r1
+!s85 0
+31
+R11
+Z19 !s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v|
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/FD.v|
+!i113 1
+R6
+R7
+R8
+n@f_1
+vF_10
+R12
+!i10b 1
+!s100 W<36ci@IaQAl]m?Uh5bQn2
+IL=fCV>_=YJ1NVc_>J^SnI3
+R2
+R0
+R16
+R17
+R18
+L0 201
+R4
+r1
+!s85 0
+31
+R11
+R19
+R20
+!i113 1
+R6
+R7
+R8
+n@f_10
+vF_5
+R12
+!i10b 1
+!s100 cmTI1[Mca;Z4gnkMdjbO@1
+I6VW9:56gz1XRB>@OOUcTg1
+R2
+R0
+R16
+R17
+R18
+L0 131
+R4
+r1
+!s85 0
+31
+R11
+R19
+R20
+!i113 1
+R6
+R7
+R8
+n@f_5
+vFD
+R12
+!i10b 1
+!s100 nHmMj;6J^Q_MLjYf3U]^F2
+IJfWOndLb4_48ncd@P<`dR0
+R2
+R0
+R16
+R17
+R18
+R10
+R4
+r1
+!s85 0
+31
+R11
+R19
+R20
+!i113 1
+R6
+R7
+R8
+n@f@d
+vLT24Display
+R1
+!i10b 1
+!s100 g0Ml0H`ILV7gf4e]j455d3
+ILBe?8j3XE2hP`Vn?hz2O^3
+R2
+R0
+Z21 w1621456104
+Z22 8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/LT24Display.v
+Z23 FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/LT24Display.v
+L0 86
+R4
+r1
+!s85 0
+31
+R5
+Z24 !s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/LT24Display.v|
+Z25 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/LT24Display.v|
+!i113 1
+R6
+R7
+R8
+n@l@t24@display
+vLT24DisplayInterface
+R1
+!i10b 1
+!s100 S52Fa_]jASRIg5HK3cSR53
+I`bQKDMmkjQ0]=@`GfQlRB3
+R2
+R0
+R21
+R22
+R23
+L0 409
+R4
+r1
+!s85 0
+31
+R5
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@l@t24@display@interface
+vLT24InitialData
+R1
+!i10b 1
+!s100 [PghI>V`k5H`AnPf[RPc_1
+I49f_^7Q0dV;ZW`OnDabGW2
+R2
+R0
+R21
+R22
+R23
+L0 523
+R4
+r1
+!s85 0
+31
+R5
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@l@t24@initial@data
+vResetSynchroniser
+R1
+!i10b 1
+!s100 g4:GWhz>Y3NIW7bPP@X5E0
+IQOo1>h@`H7lg@l[Ee8[7R0
+R2
+R0
+R21
+R22
+R23
+L0 493
+R4
+r1
+!s85 0
+31
+R5
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@reset@synchroniser
+vSeg_display
+R12
+!i10b 1
+!s100 :gTGCX0jkY8haDZg7aEWY1
+I6HeHBz@^9oH4:SP;^bMfN1
+R2
+R0
+w1622194602
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v
+L0 11
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v|
+!i113 1
+R6
+R7
+R8
+n@seg_display
+vSubject
+R1
+!i10b 1
+!s100 <zSo:7ki37OdI6@]3S;Hn2
+IZKQ4D<@0m[<1kVLbkMF?R2
+R2
+R0
+w1621803477
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Subject.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Subject.v
+R14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Subject.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Subject.v|
+!i113 1
+R6
+R7
+R8
+n@subject
+vTr
+R9
+!i10b 1
+!s100 KYZ`J6YGzPoMDCTS1_oaP3
+I[gK4Ho?63hnG:I7fI]I1F3
+R2
+R0
+w1621892671
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Tr.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Tr.v
+L0 12
+R4
+r1
+!s85 0
+31
+Z26 !s108 1622205234.000000
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Tr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Tr.v|
+!i113 1
+R6
+R7
+R8
+n@tr
+vtransponder
+R9
+!i10b 1
+!s100 7i_RC2Uc>SeYYJUUHQJoM0
+IEdeXiQ>VmoZUC?oc4O]?L1
+R2
+R0
+w1621943593
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v
+R10
+R4
+r1
+!s85 0
+31
+R26
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/transponder.v|
+!i113 1
+R6
+R7
+R8
+vTransponder_tb
+R13
+!i10b 1
+!s100 lM:OLj?mdjFUD[HAcz;U33
+I?6VS?k^i3B^aYajQ>_@Va3
+R2
+R0
+w1622205208
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation/Transponder_tb.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation/Transponder_tb.v
+R10
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation/Transponder_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation/Transponder_tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/simulation
+R8
+n@transponder_tb
+vTRUE
+R9
+!i10b 1
+!s100 SRk_lW`aSPicD]BJV3_BH1
+I>JZE4D2FGUCEoBo]0H]k30
+R2
+R0
+w1621886243
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/TRUE.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/TRUE.v
+R14
+R4
+r1
+!s85 0
+31
+R26
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/TRUE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/TRUE.v|
+!i113 1
+R6
+R7
+R8
+n@t@r@u@e
+vUpCounterNbit
+R1
+!i10b 1
+!s100 ?e;aUZB0=_b=?>zNVcESF3
+IB0C44LbnD_EI[5kdM0SdL3
+R2
+R0
+w1621365913
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/UpCounterNbit.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/UpCounterNbit.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/UpCounterNbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/UpCounterNbit.v|
+!i113 1
+R6
+R7
+R8
+n@up@counter@nbit

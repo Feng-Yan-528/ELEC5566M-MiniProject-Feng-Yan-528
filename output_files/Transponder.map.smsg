@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at Bigscreen.v(258): always construct contains both blocking and non-blocking assignments File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Bigscreen.v Line: 258
+Warning (10268): Verilog HDL information at Seg_display.v(30): always construct contains both blocking and non-blocking assignments File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/ELEC5566M-MiniProject-Feng-Yan-528/Seg_display.v Line: 30
